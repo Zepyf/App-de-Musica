@@ -68,6 +68,8 @@ Cada persona conecta la app a **su propio proyecto de Firebase**, así que tu m�
 
 ## Puesta en marcha
 
+> Todo el proyecto está dentro de la carpeta `Zepyfy/`: ábrela en Android Studio (no la raíz del repositorio) y ejecuta los comandos desde ella (`cd Zepyfy`).
+
 Requisitos: Android Studio, **JDK 17–21** y un móvil con **Android 13 (API 33)** o superior. Para los scripts, **Python 3.9** o superior.
 
 ### 1. Crear el proyecto de Firebase
