@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment">
+
+    <ImageView
+        android:id="@+id/accountButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="12dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/account_title"
+        android:padding="6dp"
+        android:src="@drawable/ic_account"
+        app:layout_constraintBottom_toBottomOf="@id/searchEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/searchEditText"
+        app:tint="@color/zepyfy_accent" />
+
+    <ImageView
+        android:id="@+id/action_add_to_playlist"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="4dp"
+        android:padding="4dp"
+        android:src="@drawable/ic_add_to_playlist"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/searchEditText"
+        app:layout_constraintEnd_toStartOf="@id/accountButton"
+        app:layout_constraintTop_toTopOf="@id/searchEditText"
+        app:tint="@color/zepyfy_accent"
+        tools:visibility="visible" />
+
+    <!-- Reproducir a continuación (visible al seleccionar canciones) -->
+    <ImageView
+        android:id="@+id/action_play_next"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="4dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/action_play_next"
+        android:padding="7dp"
+        android:src="@drawable/ic_queue_play_next"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/searchEditText"
+        app:layout_constraintEnd_toStartOf="@id/action_add_to_playlist"
+        app:layout_constraintTop_toTopOf="@id/searchEditText"
+        app:tint="@color/zepyfy_accent"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:background="@null"
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/zepyfy_accent"
+        android:hint="@string/hint_search"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/zepyfy_text_primary"
+        android:textColorHint="@color/zepyfy_accent"
+        app:layout_constraintEnd_toStartOf="@+id/action_play_next"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="400dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/zepyfy_background"
+        app:layout_constraintTop_toBottomOf="@id/searchEditText"
+        app:tabIndicatorColor="@color/zepyfy_accent"
+        app:tabSelectedTextColor="@color/zepyfy_accent"
+        app:tabTextColor="@color/zepyfy_text_secondary"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addPlaylistFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/ic_input_add"
+        android:visibility="gone"
+        app:backgroundTint="@color/zepyfy_accent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/white"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

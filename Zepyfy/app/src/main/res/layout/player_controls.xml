@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#2A2A2A"
+    android:padding="8dp">
+
+    <SeekBar
+        android:id="@+id/playerSeekbar"
+        android:layout_width="429dp"
+        android:layout_height="14dp"
+        android:progressTint="@color/zepyfy_accent"
+        android:thumbTint="@color/zepyfy_accent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/playerCoverImageView"
+        android:layout_width="56dp"
+        android:layout_height="55dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/playerSeekbar"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/playerSongTitleTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:textColor="@color/zepyfy_text_primary"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/playerArtistNameTextView"
+        app:layout_constraintEnd_toStartOf="@+id/playerPreviousButton"
+        app:layout_constraintStart_toEndOf="@+id/playerCoverImageView"
+        app:layout_constraintTop_toTopOf="@+id/playerCoverImageView"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="A very long song title that needs to scroll" />
+
+    <TextView
+        android:id="@+id/playerArtistNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+        android:textColor="@color/zepyfy_text_secondary"
+        app:layout_constraintBottom_toBottomOf="@+id/playerCoverImageView"
+        app:layout_constraintEnd_toEndOf="@+id/playerSongTitleTextView"
+        app:layout_constraintStart_toStartOf="@+id/playerSongTitleTextView"
+        app:layout_constraintTop_toBottomOf="@+id/playerSongTitleTextView"
+        tools:text="A very long artist name that also needs to scroll" />
+
+    <ImageButton
+        android:id="@+id/playerPreviousButton"
+        android:layout_width="44dp"
+        android:layout_height="39dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_skip_previous"
+        app:layout_constraintBottom_toBottomOf="@+id/playerCoverImageView"
+        app:layout_constraintEnd_toStartOf="@+id/playerPlayPauseButton"
+        app:layout_constraintTop_toTopOf="@+id/playerCoverImageView"
+        app:tint="@color/zepyfy_accent" />
+
+    <ImageButton
+        android:id="@+id/playerPlayPauseButton"
+        android:layout_width="47dp"
+        android:layout_height="39dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_play_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/playerCoverImageView"
+        app:layout_constraintEnd_toStartOf="@+id/playerNextButton"
+        app:layout_constraintTop_toTopOf="@+id/playerCoverImageView"
+        app:tint="@color/zepyfy_accent" />
+
+    <ImageButton
+        android:id="@+id/playerNextButton"
+        android:layout_width="46dp"
+        android:layout_height="39dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_skip_next"
+        app:layout_constraintBottom_toBottomOf="@+id/playerCoverImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/playerCoverImageView"
+        app:tint="@color/zepyfy_accent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

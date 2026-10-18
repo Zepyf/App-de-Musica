@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- State when the item is activated (we'll use this for selection) -->
+    <item android:state_activated="true"
+          android:color="#33FFFFFF" /> <!-- Semi-transparent white -->
+
+    <!-- Default, non-activated state -->
+    <item android:color="@android:color/transparent" />
+</selector>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Zepyfy Palette -->
+    <color name="zepyfy_background">#121212</color>
+    <color name="zepyfy_text_primary">#FFFFFF</color>
+    <color name="zepyfy_text_secondary">#B3FFFFFF</color>
+    <color name="zepyfy_accent">#00A5BB</color>
+    <color name="zepyfy_accent_dark">#00838F</color>
+    <color name="zepyfy_light_gray">#AFAFAF</color>
+    <color name="zepyfy_surface">#2A2A2A</color>
+</resources>

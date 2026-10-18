@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Visibles solo con canciones seleccionadas -->
+    <item
+        android:id="@+id/action_play_next"
+        android:icon="@drawable/ic_queue_play_next"
+        android:title="@string/action_play_next"
+        android:visible="false"
+        app:iconTint="@color/zepyfy_accent"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_add_to_playlist"
+        android:icon="@drawable/ic_add_to_playlist"
+        android:title="@string/dialog_add_to_other_playlist"
+        android:visible="false"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_remove_from_playlist"
+        android:icon="@drawable/ic_remove"
+        android:title="@string/action_remove_from_playlist"
+        android:visible="false"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_delete_playlist"
+        android:title="@string/dialog_delete_playlist_title"
+        app:showAsAction="never" />
+</menu>

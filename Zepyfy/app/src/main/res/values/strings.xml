@@ -1,0 +1,114 @@
+<resources>
+    <string name="app_name">Zepyfy</string>
+
+    <!-- Pestañas -->
+    <string name="tab_songs">Canciones</string>
+    <string name="tab_artists">Artistas</string>
+    <string name="tab_albums">Álbumes</string>
+    <string name="tab_playlists">Playlists</string>
+
+    <!-- Acciones -->
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_create">Crear</string>
+    <string name="action_remove">Eliminar</string>
+    <string name="action_add_songs">Añadir canciones</string>
+    <string name="hint_search">Buscar…</string>
+    <string name="hint_playlist_name">Nombre de la playlist</string>
+    <string name="dialog_create_playlist_title">Crear nueva playlist</string>
+    <string name="filter_albums">ÁLBUMES</string>
+    <string name="filter_singles">SENCILLOS</string>
+    <string name="filter_artists_with_photo">Solo artistas con foto</string>
+    <string name="title_add_songs_to">Añadir a %s</string>
+
+    <!-- Diálogos -->
+    <string name="dialog_add_to_playlist">Añadir a playlist</string>
+    <string name="dialog_add_to_other_playlist">Añadir a otra playlist</string>
+    <string name="dialog_remove_songs_title">Eliminar canciones</string>
+    <string name="dialog_remove_songs_message">¿Eliminar %d canción(es) de esta playlist?</string>
+
+    <!-- Mensajes de éxito -->
+    <string name="success_song_added_to_playlist">Canción añadida a %s</string>
+    <string name="success_songs_added_to_playlist">Canciones añadidas a %s</string>
+    <string name="success_songs_added_some_skipped">%1$d añadida(s) a %2$s · %3$d ya estaba(n)</string>
+
+    <!-- Información -->
+    <string name="info_song_already_in_playlist">La canción ya está en %s</string>
+    <string name="info_songs_already_in_playlist">Todas las canciones ya estaban en %s</string>
+    <plurals name="playlist_song_count_hint">
+        <item quantity="one">%d canción en la playlist · toca para añadir o quitar</item>
+        <item quantity="other">%d canciones en la playlist · toca para añadir o quitar</item>
+    </plurals>
+    <string name="success_songs_removed">Canciones eliminadas de la playlist</string>
+    <string name="success_name_updated">Nombre actualizado</string>
+    <string name="success_cover_updated">Portada actualizada</string>
+    <string name="success_photo_updated">Foto actualizada</string>
+
+    <!-- Mensajes de error -->
+    <string name="error_no_playlists">No hay playlists disponibles</string>
+    <string name="error_no_song_playing">No hay ninguna canción en reproducción</string>
+    <string name="error_adding_song">Error al añadir la canción</string>
+    <string name="error_removing_songs">Error al eliminar las canciones</string>
+    <string name="error_album_not_available">Información del álbum no disponible</string>
+    <string name="error_artist_not_available">Información del artista no disponible</string>
+    <string name="error_updating_name">Error al actualizar el nombre</string>
+    <string name="error_uploading_image">Error al subir la imagen</string>
+    <string name="error_updating_playlist">No se pudo actualizar la playlist</string>
+    <string name="error_creating_playlist">No se pudo crear la playlist</string>
+
+    <!-- Letras -->
+    <string name="lyrics_title">Letra</string>
+    <string name="lyrics_loading">Cargando letra…</string>
+    <string name="lyrics_not_available">Letra no disponible.</string>
+    <string name="lyrics_error">No se pudo cargar la letra.</string>
+
+    <!-- Inicio de sesión y cuenta -->
+    <string name="login_subtitle">Inicia sesión para acceder a tu biblioteca</string>
+    <string name="login_with_google">Continuar con Google</string>
+    <string name="login_error_no_accounts">No hay ninguna cuenta de Google en este dispositivo. Añade una en Ajustes y vuelve a intentarlo.</string>
+    <string name="login_error_missing_config">El inicio de sesión con Google no está configurado en este proyecto de Firebase.\n\n1. Firebase Console → Authentication → Sign-in method → activa Google.\n2. Configuración del proyecto → tu app Android → añade la huella SHA-1.\n3. Descarga de nuevo google-services.json, sustitúyelo en app/ y vuelve a compilar.</string>
+    <string name="login_error_generic">No se pudo iniciar sesión: %s</string>
+
+    <string name="account_title">Cuenta</string>
+    <string name="account_message">Sesión iniciada como %1$s\n\nUID: %2$s</string>
+    <string name="access_denied_title">Sin acceso a la biblioteca</string>
+    <string name="access_denied_message">Has iniciado sesión como %1$s, pero las reglas de Firebase no permiten a esta cuenta leer los datos.\n\nAñade este UID a firestore.rules y storage.rules y publícalas en Firebase Console:\n\n%2$s</string>
+    <string name="action_copy_uid">Copiar UID</string>
+    <string name="action_sign_out">Cerrar sesión</string>
+    <string name="action_close">Cerrar</string>
+    <string name="sign_out_confirm">¿Cerrar sesión? Se detendrá la reproducción y se borrarán de este móvil las descargas y la cola guardada.</string>
+    <string name="uid_copied">UID copiado</string>
+
+    <!-- Playlists: borrar y reordenar -->
+    <string name="dialog_delete_playlist_title">Eliminar playlist</string>
+    <string name="dialog_delete_playlist_message">¿Eliminar «%s»? Las canciones no se borran, solo la lista.</string>
+    <string name="success_playlist_deleted">Playlist «%s» eliminada</string>
+    <string name="error_deleting_playlist">No se pudo eliminar la playlist</string>
+    <string name="action_remove_from_playlist">Eliminar de la playlist</string>
+    <string name="playlist_cover">Portada de la playlist</string>
+    <string name="drag_to_reorder">Arrastrar para reordenar</string>
+
+    <!-- Cola de reproducción -->
+    <string name="action_play_next">Reproducir a continuación</string>
+    <plurals name="play_next_added">
+        <item quantity="one">%d canción sonará a continuación</item>
+        <item quantity="other">%d canciones sonarán a continuación</item>
+    </plurals>
+    <string name="queue_title">Cola de reproducción</string>
+    <string name="queue_empty">No hay nada en la cola</string>
+    <plurals name="queue_count">
+        <item quantity="one">%d canción</item>
+        <item quantity="other">%d canciones</item>
+    </plurals>
+    <string name="queue_hint">arrastra para reordenar, desliza para quitar</string>
+
+    <!-- Descargas sin conexión -->
+    <string name="action_download">Descargar para escuchar sin conexión</string>
+    <string name="action_remove_download">Quitar descarga</string>
+    <plurals name="download_started">
+        <item quantity="one">Descargando %d canción para escuchar sin conexión</item>
+        <item quantity="other">Descargando %d canciones para escuchar sin conexión</item>
+    </plurals>
+    <string name="download_removed">Descarga eliminada</string>
+    <string name="download_channel_name">Descargas</string>
+    <string name="download_notification_text">Descargando música para escuchar sin conexión</string>
+</resources>

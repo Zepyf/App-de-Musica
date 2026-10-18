@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme for dark mode. -->
+    <style name="Base.Theme.ZepyfyV2" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/zepyfy_accent</item>
+        <item name="colorOnPrimary">@color/zepyfy_background</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/zepyfy_accent_dark</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Background color. -->
+        <item name="android:colorBackground">@color/zepyfy_background</item>
+        <item name="colorSurface">@color/zepyfy_background</item>
+        <item name="colorOnBackground">@color/zepyfy_text_primary</item>
+        <item name="colorOnSurface">@color/zepyfy_text_primary</item>
+        <!-- Text colors. -->
+        <item name="android:textColorPrimary">@color/zepyfy_text_primary</item>
+        <item name="android:textColorSecondary">@color/zepyfy_text_secondary</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/zepyfy_background</item>
+        <!-- Toolbar icon color -->
+        <item name="colorControlNormal">@color/zepyfy_accent</item>
+    </style>
+
+    <style name="Theme.ZepyfyV2" parent="Base.Theme.ZepyfyV2" />
+</resources>
