@@ -5,10 +5,10 @@ Reproductor de música para Android que reproduce tu propia biblioteca desde **F
 Cada persona conecta la app a **su propio proyecto de Firebase**, así que tu música y tus datos son solo tuyos. El repositorio incluye además unos **scripts en Python** que preparan tus MP3 y los suben a Firebase automáticamente.
 
 <p align="center">
-  <img src="docs/screenshots/main.png" width="200">
-  <img src="docs/screenshots/player.png" width="200">
-  <img src="docs/screenshots/artist.png" width="200">
-  <img src="docs/screenshots/album.png" width="200">
+  <img src="Zepyfy/docs/screenshots/main.png" width="200">
+  <img src="Zepyfy/docs/screenshots/player.png" width="200">
+  <img src="Zepyfy/docs/screenshots/artist.png" width="200">
+  <img src="Zepyfy/docs/screenshots/album.png" width="200">
 </p>
 
 ## Funcionalidades
