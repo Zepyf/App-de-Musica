@@ -1,0 +1,37 @@
+# ---------- Android Studio / Gradle ----------
+.gradle/
+.kotlin/
+build/
+/captures
+.externalNativeBuild
+.cxx
+*.iml
+# Ajustes del IDE de cada equipo (rutas locales, dispositivos, IDs de Firebase...)
+.idea/
+.DS_Store
+
+# Configuración local (ruta del SDK de Android de tu equipo)
+local.properties
+
+# ---------- Credenciales ----------
+# Cada persona usa su propio proyecto de Firebase: ver app/google-services.json.example
+app/google-services.json
+
+# Claves de firma y builds generados
+*.jks
+*.keystore
+*.apk
+*.aab
+/app/release/
+
+# ---------- Herramientas (tools/) ----------
+# Configuración local: rutas, token de Genius y clave de Firebase
+tools/config.ini
+# Claves de cuenta de servicio de Firebase (dan acceso total al proyecto)
+serviceAccountKey*.json
+*-firebase-adminsdk-*.json
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
