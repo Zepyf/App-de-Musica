@@ -1,0 +1,6 @@
+# Dependencias de las herramientas (pip install -r requirements.txt)
+firebase-admin>=6.0
+mutagen>=1.47
+lyricsgenius>=3.0
+requests>=2.31
+Pillow>=10.0

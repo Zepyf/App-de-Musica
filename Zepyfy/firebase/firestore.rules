@@ -1,0 +1,30 @@
+// Reglas de Cloud Firestore para Zepyfy.
+//
+// Solo las cuentas cuyo UID esté en la lista pueden leer o escribir.
+// Iniciar sesión con Google no basta: cualquiera puede autenticarse en un proyecto
+// de Firebase, así que esta lista es lo que de verdad protege la biblioteca.
+//
+// Cómo publicarlas:
+//   1. Inicia sesión una vez en la app (o mira Firebase Console → Authentication → Users)
+//      y copia tu UID. La app también lo muestra en el botón de cuenta.
+//   2. Sustituye PEGA_AQUI_TU_UID por ese UID. Para dar acceso a más personas,
+//      añade sus UID a la lista: ["uid1", "uid2"].
+//   3. Firebase Console → Firestore Database → Reglas → pega este archivo → Publicar.
+//      (O con Firebase CLI: firebase deploy --only firestore:rules)
+
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isOwner() {
+      return request.auth != null
+        && request.auth.uid in ['PegaAquiTuUID'];
+    }
+
+    // canciones, albums, artistas, Playlist... todo requiere ser propietario
+    match /{document=**} {
+      allow read, write: if isOwner();
+    }
+  }
+}
